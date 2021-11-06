@@ -2,4 +2,4 @@ from creatingmodule import *
 #msg()
 add(5,6)
 
-#print("kudka=",__name__)
+#print("ku                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              dka=",__name__)
