@@ -13,9 +13,17 @@ age=int(input("enetr your age"))
 insert="insert into test(name,age) values(%s,%s)"
 value=(name,age)
 mycusrsor.execute(insert,value)
-'''
+
 upd="update test set name='ashwani' where age=100"
 mycusrsor.execute(upd)
 connection.commit() # when we insert,update,delete to save data permananenly
-print("Data inserted successfully")
+print("Data inserted successfully")'''
+
+fetch_data="select * from student_info"
+mycusrsor.execute(fetch_data)
+result=mycusrsor.fetchall()
+print(result)
+final_result = [list(i) for i in result]
+
+print(final_result)
 connection.close()
